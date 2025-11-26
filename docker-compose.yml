@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8085:8000"
+    environment:
+      - DB_HOST=10.0.1.221
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_PORT=5432
